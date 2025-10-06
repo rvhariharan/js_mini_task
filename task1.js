@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Inventory Management System</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="task1.js"></script>
-</head>
-<body>
-  <h1>Inventory Management System</h1>
-  <div class="container">
-    <h3>Add / Update Item</h3>
-    <input type="number" id="id" placeholder="ID">
-    <input type="text" id="name" placeholder="Name">
-    <input type="number" id="price" placeholder="Price">
-    <input type="number" id="stock" placeholder="Stock"><br>
-    <button onclick="addItem()">Add Item</button>
-    <button onclick="updateStock()">Update Stock</button>
-    <button onclick="removeItem()">Remove Item</button>
-    <button onclick="findPrice()">Find Price</button>
-    <button onclick="listAllItems()">List All</button>
 
-    <h3>Output:</h3>
-    <pre id="output"></pre>
-  </div>
-
-  <script>
     let inventory = [
       { id: 101, name: "Laptop", price: 1200, stock: 5 },
       { id: 102, name: "Mouse", price: 25, stock: 50 },
@@ -86,7 +60,3 @@
       });
       display(list);
     }
-  </script>
-
-</body>
-</html>
